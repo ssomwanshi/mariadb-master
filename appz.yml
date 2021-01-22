@@ -1,8 +1,7 @@
 app:
     name: mariadb Master
     code: mariadbmaster
-    notify: appzdev@cloudbourne.co
-
+    notify: ssomwanshi@maximaconsulting.net
 build:
     version: 10.4
     env: DEV
@@ -11,7 +10,7 @@ build:
     image_template: mariadb_master-10.4
 
 deploy:
-    context: alpha/DEV
+    context: ssomwanshi/DEV
     type: statefulset
     replicas: 1
     port:
